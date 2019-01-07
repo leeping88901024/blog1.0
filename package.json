@@ -22,12 +22,18 @@
   },
   "homepage": "https://github.com/leeping88901024/blog1.0#readme",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "antd": "^3.12.1",
     "express": "^4.16.4",
+    "less": "^3.9.0",
     "next": "^7.0.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
+    "babel-plugin-import": "^1.11.0",
     "cross-env": "^5.2.0",
     "nodemon": "^1.18.9"
   }
