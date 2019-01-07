@@ -1,40 +1,32 @@
-import { Layout, Menu, Icon } from 'antd'
 import Link from 'next/link'
 import Head from 'next/head'
-import { DatePicker } from 'antd'
-import './layout.css'
-const {
-    Header, Content, Footer, Sider
-} = Layout
+import 'bulma/css/bulma.css'
 
-export default ({ children, title = '这是默认标题' }) => (
+export default ({ children, title = 'This is the default title' }) => (
   <div>
     <Head>
       <title>{ title }</title>
       <meta charSet='utf-8' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
     </Head>
-    <Layout>
-        <Sider
-          breakpoint='lg'
-          collapsedWidth='0'
-          onBreakpoint={(broken) => {console.log(broken)}}
-          onCollapse={(collapsed, type) => {console.log(collapsed, type)}}
-        >
-          <div className='logo' />
-          
-        </Sider>
-        <Layout>
-          <Header style={{ background: '#fff', padding: 0 }} />
-          <Content style={{ margin: '24px 16px 0' }}>
-            <div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
-              { children }
-            </div>
-          </Content>
-          <Footer style={{ textAlign: 'center' }}>
-            Ant Design ©2018 Created by Ant UED
-          </Footer>
-        </Layout>
-    </Layout>
+    <header>
+      <nav>
+        <Link href='/'><a>主页</a></Link> |
+        <Link href='/about'><a>关于我</a></Link> |
+        <Link href='/contact'><a>联系我</a></Link>
+      </nav>
+    </header>
+
+    { children }
+
+    <a className="button is-primary">Primary</a>
+    <a className="button is-link">Link</a>
+    <a className="button is-info">Info</a>
+    <a className="button is-success">Success</a>
+    <a className="button is-warning">Warning</a>
+    <a className="button is-danger">Danger</a>
+    <footer>
+      {'我要待在这里'}
+    </footer>
   </div>
 )
