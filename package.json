@@ -1,0 +1,29 @@
+{
+  "name": "blog1.0",
+  "version": "1.0.0",
+  "description": "blog for speed",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leeping88901024/blog1.0.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "lee ping",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leeping88901024/blog1.0/issues"
+  },
+  "homepage": "https://github.com/leeping88901024/blog1.0#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
