@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import { Calendar } from 'antd'
+import { DatePicker } from 'antd'
 export default ({ children, title = '这是默认标题' }) => (
   <div>
     <Head>
@@ -17,7 +17,7 @@ export default ({ children, title = '这是默认标题' }) => (
     </header>
 
     { children }
-    <Calendar />
+    <DatePicker />
     <footer>
       {'我要待在这里'}
     </footer>
