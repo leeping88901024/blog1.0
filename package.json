@@ -25,7 +25,6 @@
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-less": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
-    "bulma": "^0.7.2",
     "express": "^4.16.4",
     "less": "^3.9.0",
     "next": "^7.0.2",
