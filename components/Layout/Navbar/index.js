@@ -17,9 +17,11 @@ export default class Navbar extends React.Component {
         return (
             <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="http://www.macdull.top">
-                    <img src={Logo} />
-                    </a>
+                    <Link prefetch href='/'>
+                        <a className="navbar-item">
+                        <img src={Logo} />
+                        </a>
+                    </Link>
 
                     <a role="button" className={this.state.is_active ? "navbar-burger burger is-active" : "navbar-burger burger"} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={this.handleClick.bind(this)}>
                         <span aria-hidden="true"></span>
@@ -67,7 +69,7 @@ export default class Navbar extends React.Component {
                         <a className="button is-primary">
                             <strong>注册</strong>
                         </a>
-                        <Link href='/login'>
+                        <Link prefetch href='/login'>
                             <a className="button is-light">
                                 登录
                             </a>
