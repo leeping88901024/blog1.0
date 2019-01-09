@@ -1,9 +1,15 @@
 import MultiboxMenu from '../components/MultiboxMenu'
 
-export default () => (
-  <MultiboxMenu title='主页'>
-    <div>
-      hhhhhhhhhh
-    </div>
-  </MultiboxMenu>
-)
+export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <MultiboxMenu>
+        
+      </MultiboxMenu>
+    )
+  }
+}

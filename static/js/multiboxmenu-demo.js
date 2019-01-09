@@ -1,3 +1,13 @@
+/**
+ * demo.js
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2018, Codrops
+ * http://www.codrops.com
+ */
 {
     // Class Menu.
     class Menu {
@@ -8,7 +18,6 @@
             this.DOM.closeCtrl = this.DOM.el.querySelector('.action--close');
             this.DOM.openCtrl.addEventListener('click', () => this.open());
             this.DOM.closeCtrl.addEventListener('click', () => this.close());
-
             this.DOM.openCtrl.addEventListener('mouseenter', () => {
                 allowTilt = false;
                 tilt.reset()
@@ -186,7 +195,7 @@
         layout() {
             let inner = '';
             for (let i = 0; i <= this.layersTotal-1; ++i) {
-                inner +=  '<div class="background__copy" style="background-image: url(../img/multiboxmenu-1.jpg)"></div>';
+                inner +=  '<div class="background__copy" style="background-image: url(img/multiboxmenu-1.jpg)"></div>';
             }
             this.DOM.main.innerHTML = inner;
             this.DOM.layers = Array.from(this.DOM.main.querySelectorAll('.background__copy'));

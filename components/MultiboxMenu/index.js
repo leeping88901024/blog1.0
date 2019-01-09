@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import bgimg from '../../static/img/multiboxmenu-1.jpg'
+import ico from '../../static/favicon.ico'
 
 export default class MultiboxMenu extends React.Component {
 	constructor(props) {
@@ -10,8 +12,16 @@ export default class MultiboxMenu extends React.Component {
 		return(
 			<div>
 				<Head>
+				    <meta charset="UTF-8" />
+		            <meta name="viewport" content="width=device-width, initial-scale=1" />
 					<title>博客 | 首页</title>
+					<meta name="description" content="A simple grid-powered multibox menu that shows with a reveal animation." />
+		            <meta name="keywords" content="slideshow, reveal, effect, animation, web design, template, demo" />
+		            <meta name="author" content="Codrops" />
+					<link rel="shortcut icon" href={ico}></link>
+					<link rel="stylesheet" href="https://use.typekit.net/zjs0dpp.css"></link>
 					<link rel="stylesheet" type="text/css" href="css/multiboxmenu-base.css" />
+					<script src='js/loading.js' ></script>
 				</Head>
 				<svg className="hidden">
 					<symbol id="icon-arrow" viewBox="0 0 24 24">
@@ -37,58 +47,63 @@ export default class MultiboxMenu extends React.Component {
 				</svg>
 
 				<div className="frame">
-					<header className="codrops-header">
-						<h1 className="codrops-header__title">博文</h1>
-					</header>
-					<p className="info">12 &mdash; 24 五月 2019 &middot; Ping &middot; 昆明 &middot; 云南</p>
-					<a className="github" href="https://github.com/leeping88901024/blog1.0" title="在github上查看该项目"><svg className="icon icon--github"><use href="#icon-github"></use></svg></a>
+				<header className="codrops-header">
+					<div className="codrops-links">
+						<a className="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/GridLayoutScrollableContent/" title="Previous Demo"><svg className="icon icon--arrow"><use href="#icon-arrow"></use></svg></a>
+						<a className="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=36043" title="Back to the article"><svg className="icon icon--drop"><use href="#icon-drop"></use></svg></a>
+					</div>
+					<h1 className="codrops-header__title">Multibox Menu</h1>
+				</header>
+				<p className="info">12 &mdash; 24 May 2019 &middot; Bannockburn &middot; Stirling &middot; UK</p>
+					<a className="github" href="https://github.com/codrops/MultiboxMenu/" title="Find this project on GitHub"><svg className="icon icon--github"><use href="#icon-github"></use></svg></a>
+				</div>
+				<div className="content">
+					<div className="background" style={{backgroundImage: bgimg}}></div>
+					<h2 className="content__title">Carmeca</h2>
+					<p className="content__tagline">Europe's most immersive LARP experience</p>
 				</div>
 
-				<div className="content">
-				    <div className="background"></div>
-					{ this.props.children }
-				</div>
 				<nav className="menu">
 					<div className="menu__item menu__item--1" data-direction="bt">
 						<div className="menu__item-inner">
 							<div className="mainmenu">
-								<a href="#" className="mainmenu__item">故事</a>
-								<a href="#" className="mainmenu__item">编年史</a>
-								<a href="#" className="mainmenu__item">足迹</a>
-								<a href="#" className="mainmenu__item">联系我</a>
+								<a href="#" className="mainmenu__item">Story</a>
+								<a href="#" className="mainmenu__item">Chronicles</a>
+								<a href="#" className="mainmenu__item">Tour</a>
+								<a href="#" className="mainmenu__item">Contact</a>
 							</div>
-							<p className="label label--topleft label--vert-mirror">至关重要的东西</p>
-							<p className="label label--bottomright label--vert">中国制造</p>
+							<p className="label label--topleft label--vert-mirror">the important stuff</p>
+							<p className="label label--bottomright label--vert">made in bannockburn</p>
 						</div>
 					</div>
 					<div className="menu__item menu__item--2" data-direction="lr">
 						<div className="menu__item-inner">
 							<div className="menu__item-map"></div>
-							<a href="#" className="menu__item-hoverlink">那个地方</a>
+							<a href="#" className="menu__item-hoverlink">The location</a>
 						</div>
 					</div>
 					<div className="menu__item menu__item--3" data-direction="bt">
 						<div className="menu__item-inner">
 							<div className="sidemenu">
-								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">游戏玩法</span></a>
-								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">关于LARP</span></a>
-								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">规则</span></a>
-								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">历史</span></a>
-								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">人文</span></a>
-								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">加入</span></a>
+								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">The Gameplay</span></a>
+								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">About LARP</span></a>
+								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">The Rules</span></a>
+								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">History</span></a>
+								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">People</span></a>
+								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">Join</span></a>
 								<a href="#" className="sidemenu__item"><span className="sidemenu__item-inner">...</span></a>
 							</div>
 						</div>
 					</div>
 					<div className="menu__item menu__item--4" data-direction="rl">
 						<div className="menu__item-inner">
-							<p className="label label--topleft label--line">即刻加入我们</p>
-							<a href="#" className="menu__item-link">如何 <br/> 加入</a>
+							<p className="label label--topleft label--line">Join us now</p>
+							<a href="#" className="menu__item-link">Learn how to <br/> participate</a>
 						</div>
 					</div>
 					<div className="menu__item menu__item--5" data-direction="tb">
 						<div className="menu__item-inner">
-							<p className="quote">在软件开发中，技术变化如此之快，你花费了大量时间学习技术和工具，一旦这些技术被取代，你的知识将变得毫无价值，因为它们大部分都是实施的细节。</p>
+							<p className="quote">Hail to thee, our infantry, still brave, beyond the grave</p>
 						</div>
 					</div>
 					<button className="action action--menu"><svg className="icon icon--menu"><use href="#icon-menu"></use></svg></button>
