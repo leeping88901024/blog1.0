@@ -6,20 +6,20 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 body {
-	--color-text: #fff;
-	--color-bg: #dab7b7;
-	--color-link: #fff;
+	--color-text: #252525;
+	--color-bg: #fff;
+	--color-link: #252525;
 	--color-link-hover: #f20c40;
-	--color-bg-item1: #15171b;
-	--color-bg-item2: #2c35b7;
-	--color-bg-item3: #0f1013;
-	--color-bg-item4: #1d2027;
-	--color-bg-item5: #0f1013;
+	--color-bg-item1: #fff;
+	--color-bg-item2: #babbcf;
+	--color-bg-item3: #fff;
+	--color-bg-item4: #fff;
+	--color-bg-item5: #fff;
 	--color-item-alt: #494d54;
 	--color-quote: #5b677a;
-	--color-info: #57535a;
+	--color-info: #252525;
 	--color-title: #e23434;
-	--color-tagline: #e2e2e2;
+	--color-tagline: #252525;
 	font-family: "europa", Futura, Arial, sans-serif;
 	min-height: 100vh;
 	color: #57585c;
@@ -128,7 +128,7 @@ main {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-image: url(../img/multiboxmenu-1.jpg);
+	/*background-image: url(../img/multiboxmenu-1.jpg);*/
 	background-position: 50% 0%;
 	background-size: cover;
 	z-index: 1;
@@ -214,7 +214,7 @@ main {
 .action {
 	background: none;
 	border: 0;
-	color: #fff;
+	color: #252525;
 	cursor: pointer;
 	padding: 0;
 }
