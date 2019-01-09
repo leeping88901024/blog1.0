@@ -10,6 +10,8 @@ app.prepare()
   .then(() => {
     const server = express()
 
+    server.use(express.static('static'))
+
     server.get('/ac', (req, res) => {
       return app.render(req, res, '/b', req.query)
     })

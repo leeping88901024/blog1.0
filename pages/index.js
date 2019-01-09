@@ -1,8 +1,11 @@
-import Layout from '../components/Layout'
-// import 'bulma/css/bulma.css'
+import MultiboxMenu from '../components/MultiboxMenu'
 
 export default () => (
-  <Layout title='主页'>
-      主页内容
-  </Layout>
+  <MultiboxMenu title='主页'>
+    {/* 
+    
+    <p className="content__tagline">有关内容的标签</p>   
+    <h2 className="content__title">内容标题</h2>*/}
+    
+  </MultiboxMenu>
 )
