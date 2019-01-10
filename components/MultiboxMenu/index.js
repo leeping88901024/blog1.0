@@ -30,7 +30,7 @@ const MultiboxMenu = () =>(
 
         <Helmet>
             <script src='loading.js'></script>
-            <body>
+            <body className='loading'>
             </body>
             <script src="imagesloaded.pkgd.min.js"></script>
             <script src="TweenMax.min.js"></script>
