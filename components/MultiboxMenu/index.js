@@ -29,7 +29,6 @@ const MultiboxMenu = () =>(
 		</svg>
 
         <Helmet>
-            <script src='loading.js'></script>
             <body className='loading'>
             </body>
             <script src="imagesloaded.pkgd.min.js"></script>

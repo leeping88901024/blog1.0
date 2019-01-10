@@ -161,9 +161,11 @@
 	// Initialize the Menu.
     const menu = new Menu(document.querySelector('nav.menu'));
 
+
+    /*
     // Preload images.
     imagesLoaded(document.querySelector('.background'), {background: true}, () => document.body.classList.remove('loading'));
-    
+    */
     // extra stuff..
     
     // From http://www.quirksmode.org/js/events_properties.html#position
@@ -183,6 +185,7 @@
 		return { x : posx, y : posy }
     };
 
+    
     // Main image  tilt effect.
     class TiltFx {
         constructor() {
