@@ -25,6 +25,7 @@
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-less": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
+    "dayjs": "^1.7.8",
     "express": "^4.16.4",
     "gsap": "^2.0.2",
     "less": "^3.9.0",

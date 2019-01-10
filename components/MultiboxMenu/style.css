@@ -17,7 +17,7 @@ body {
 	--color-bg-item5: #0f1013;
 	--color-item-alt: #494d54;
 	--color-quote: #5b677a;
-	--color-info: #57535a;
+	--color-info: #fff;
 	--color-title: #e23434;
 	--color-tagline: #e2e2e2;
 	font-family: "europa", Futura, Arial, sans-serif;
@@ -186,7 +186,7 @@ main {
 }
 
 .content__title {
-	font-family: "sabbath-black", serif;
+	/*font-family: "sabbath-black", serif;*/
 	font-size: 14vw;
 	font-weight: normal;
 	mix-blend-mode: screen;
@@ -331,7 +331,7 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	/*background: url(../img/2.jpg) no-repeat 50% 50%;*/
+	background: url(http://www.macdull.top/2.jpg) no-repeat 50% 50%;
 	background-size: cover;
 	transition: transform 0.8s cubic-bezier(0.2,1,0.8,1);
 }
