@@ -129,7 +129,7 @@ main {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-image: url(../img/multiboxmenu-1.jpg);
+	/*background-image: url(../img/1.jpg);*/
 	background-position: 50% 0%;
 	background-size: cover;
 	z-index: 1;
@@ -137,7 +137,6 @@ main {
 
 .background__copy {
 	opacity: 0.3;
-	transform: translate3d(0,0,0);
 }
 
 /* Header */
@@ -196,7 +195,6 @@ main {
 	margin: 0;
 	color: var(--color-title);
 	z-index: 199;
-	cursor: default;
 }
 
 .content__tagline {
@@ -209,7 +207,6 @@ main {
 	text-transform: uppercase;
 	text-align: center;
 	z-index: 199;
-	cursor: default;
 }
 
 .action {
@@ -334,7 +331,7 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(../img/multiboxmenu-2.jpg) no-repeat 50% 50%;
+	/*background: url(../img/2.jpg) no-repeat 50% 50%;*/
 	background-size: cover;
 	transition: transform 0.8s cubic-bezier(0.2,1,0.8,1);
 }

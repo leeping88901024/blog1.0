@@ -16,9 +16,6 @@ export default class MyDocument extends Document {
         <body className='loading'>
           <Main />
           <NextScript />
-          <script src="js/multiboxmenu-imagesloaded.pkgd.min.js"></script>
-					<script src="js/multiboxmenu-TweenMax.min.js"></script>
-          <script src="js/multiboxmenu-demo.js"></script>
         </body>
       </html>
     )
